@@ -1,9 +1,9 @@
 {
-  "name": "elf-taro-cli",
-  "version": "2.0.0",
-  "description": "Taro 小程序 模版项目",
-  "repository": "git@github.com:didilinkin/elf-taro-cli.git",
-  "author": "yanxiaodi <929213769@qq.com>",
+  "name": "zkyweapp",
+  "version": "1.0.0",
+  "description": "小程序测试项目",
+  "repository": "test",
+  "author": "logan",
   "license": "MIT",
   "templateInfo": {
     "name": "redux",
@@ -38,6 +38,7 @@
     "build:jd": "taro build --type jd",
     "build:quickapp": "taro build --type quickapp",
     "dev:weapp": "set NODE_ENV=production && taro build --type weapp --watch",
+    "dev:wexin": "taro build --type weapp -- --watch --env production",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:tt": "npm run build:tt -- --watch",
@@ -101,6 +102,7 @@
     "stylelint": "9.3.0",
     "terser-webpack-plugin": "^5.0.3",
     "typescript": "^3.7.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "utf-8-validate": "^5.0.2"
   }
 }

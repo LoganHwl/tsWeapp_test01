@@ -11,7 +11,19 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [],
+  plugins: [
+    // [
+    //   '@tarojs/uglifyjs-webpack-plugin',
+    //   {
+    //     uglify: {
+    //       enable: true,
+    //       config: {
+    //         // 配置项同 https://github.com/mishoo/UglifyJS2#minify-options
+    //       },
+    //     },
+    //   },
+    // ],
+  ],
   defineConstants: {},
   copy: {
     patterns: [],
@@ -47,6 +59,7 @@ const config = {
         .options({
           sourceMap: process.env.NODE_ENV !== 'production',
         })
+
       // chain.mode('production')
       // chain.optimization.minimize(true)
       // chain.plugin('terser').use(TerserPlugin, [
